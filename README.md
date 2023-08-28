@@ -82,17 +82,19 @@ Truth tables are tools that help us define logical operators
 
 | P | Q | p ⋀ q |
 |---|---|-------|
-| T | T |  |
-| T | F |  |
-| F | T |  |
-| F | F |  |
+| T | T | T |
+| T | F | F |
+| F | T | F |
+| F | F | F |
 
 | P | Q | p ⋁ q |
 |---|---|-------|
-| T | T |  |
-| T | F |  |
-| F | T |  |
-| F | F |  |
+| T | T | T |
+| T | F | T |
+| F | T | T |
+| F | F | F |
+
+Truth tables can be used to show how these operators can combine propositions to compound propositions. They can also help determine if two propositions are logically equivalent by comparing their truth values based on the same truth values for p and q. 
 
 ### Implication (if-then)
 
@@ -103,7 +105,7 @@ Truth tables are tools that help us define logical operators
 | F | T | T |
 | F | F | T |
 
-Let p and q be propositions
+Let p and q be propositions. The conditional statement p → q is the proposition "if p, then q." The conditional statement p → q is false when p is true and q is false, and true otherwise. In the conditional statement p → q, p is called the hypothesis (or antecedent or premise) and q is called the conclusion (or consequence). The statement p → q is called a conditional statement because p → q asserts that q is true on the condition that p holds. A conditional statement is also called an **implication.** Note that the statement p → q is true when both p and q are true and when p is false (no matter what truth value q has). **An implication is true exactly when the if-part is false or the then-part is true.** When evaluating an implication, the statement is primarily focused on what happens if p is true. If p is true, it implies q, meaning that q will be true. However, an implication doesn't mention what would happen if p were false so anytime p is false, the implication evaluates to true since there were no specifications on q's truth value if p were false. 
 
 #### Converse, Inverse, and Contrapositive
 
