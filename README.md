@@ -233,25 +233,96 @@ Set: unordered collection of objects ("elements")
 Sets A and B are equal if and only if they contain exactly the same elements
 Ex: 
 - A = {9, 2, 7, -3}, B = {7, 9, -3, 2} A = B
-- A = {
-- A
+- A = {dog, cat, horse}, B = {cat horse, squirrel, dog} A != B
+- A = {dog, cat, horse}, B = {cat, horse, dog, dog} A = B
 
 Examples for Sets
 - "Standard" Sets:
-- Natural Numbers N =
-- Integers Z =
-- Positive Integers Z<sup>+</sup> = 
-- Real Numbers R = 
-- Rational Numbers Q =
+- Natural Numbers **N** = {0, 1, 2, 3, ...}
+- Integers **Z** = {-2, -1, 0, 1, 2, ...}
+- Positive Integers **Z<sup>+</sup>** = {1, 2, 3, ...}
+- Real Numbers **R** = {47.3, -12, $\pi$, ...}
+- Rational Numbers **Q** = {1.5, 2.6, -3.8, 15, ...}
 
 - A = ∅ (empty/null set)
 - A = {z}
-    - Note: zE A, but z != {z}
+    - Note: z∈ A, but z ≠ {z}
 - A = {{b, c}, {c, x, d}}
 - A = {{x, y}}
-  - Note: {x, y} E A, but {x, y} != {{x, y}}
-- A
+  - Note: {x, y} ∈ A, but {x, y} ≠ {{x, y}}
+- A = {x | P(x)} (set of all x such that P(x))
+- A = {x | x∈ N AND x > 7} = {8, 9, 10, ...} (this is set builder notation)
 
 ### Subsets
 - A ⊆ B (A is a subset of B)
 - A ⊆ B if and only if every element of A is also an element of B
+- We can formalize this as A ⊆ B ↔ ∀x(x∈A → x∈B)
+
+#### Useful Rules for Subsets
+
+- ∅ ⊆ A for any set A
+- A ⊆ A for any set A
+
+Proper Subsets:
+- A ⊂ B "A is a proper subset of B"
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/455c51e4-cbb8-46e6-8838-3faf62571401)
+
+#### Cardinality of Sets
+- If a set S contains n distinct elements, n∈ N, we call S a **finite set** with **cardinality n.**
+Ex:
+- A = {Mercedes, BMW, Porsche}, |A| = 3
+- B = {1, {2, 3}, {4, 5}, 6} |B| = 4
+- C = |C| = 0
+- D = { x ∈ N | x <= 7000} |D| = 7001
+- E = { x ∈ N | x > 7000} E is infinite
+
+Cardinality of Finite Sets
+- The cardinality of the set
+$ N<sub>k</sub> - {n | n
+
+#### The Power Set
+- P(A) "Power set of A"
+- P(A) = {B | B ⊆ A} (contains all subsets of A)
+Ex:
+- A = {x, y, z}
+- P(A) = {∅, {x}, {y}, {z}, {x, y}, {x, z}, {y, z}, {x, y, z}}
+
+- A = ∅
+- P(A) = {∅}
+- Note: |A| = 0, |P(A)| = 1
+
+Cardinality of Power Sets:
+- |P(A)| = $2<sup>|A|</sup>$
+- Imagine each element in A has an "on/off" switch
+- Each possible switch configuration in A corresponds to one element in $2<sup>A</sup>$
+
+#### Cartesian Product
+- The ordered n-tuple (a1, a2, a3, ..., an) is an ordered collection of objects
+- T
+- The Cartesian Product of two sets is defined as:
+- A X B = {(a, b) | a∈ A AND b∈ B} ≠ B X A
+- ads
+
+Note that:
+- A X ∅ = ∅
+- ∅ X A = ∅
+
+#### Set Operations
+- Union: A U B = {x | x∈ A OR x∈ B}
+- Ex:
+- Intersection: A n B = {x | x∈ A AND x∈ B}
+
+- Complements of both operations are all elements outside the sets and for intersection, it also includes elements exclusive to either set
+
+- Two sets are called disjoint if their intersection is empty, that is, they share no elements:
+- A n B = ∅
+- The difference between two sets A and B contains exactly those elements of A that are not in B:
+- A - B
+
+The complement of a set A contains exactly those elements under consideration that are not in A:
+
+#### Set Identities
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/da2355c2-802c-4db5-afd7-8df3c13230e0)
+
