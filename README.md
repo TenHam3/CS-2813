@@ -214,6 +214,10 @@ Let the universe of discourse be all real numbers. What does ∀x∃y (x + y = 3
 - Statements such as ∀x (P(x) → Q(x)) can be disproved by simply providing a counterexample
   - Statement: "All birds can fly"
   - Disproved by counterexample: Penguin
+ 
+#### Negation of Quantifiers
+- ¬(∀x (Px)) is logically equivalent to ∃x (¬P(x)).
+- ¬(∃x P(x)) is logically equivalent to ∀x (¬P(x)).
 
 ## Set Theory
 
