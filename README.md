@@ -175,39 +175,52 @@ What is the truth value of P(9)? True
 #### Universal Quantification
 Let P(x) be a propositional function. Universally quantified sentence: For all x in the universe of discourse (domain) P(x) is true.
 
-Using the universal quantifier A: 
-- Ax P(x) "for all x P(x)" or "for every x P(x)"
-- Note: Ax P(x) is either true or false, so it is a proposition, not a propositional function
+Using the universal quantifier ∀: 
+- ∀x P(x) "for all x P(x)" or "for every x P(x)"
+- Note: ∀x P(x) is either true or false, so it is a proposition, not a propositional function
 
 Ex: 
 - S(x): x is an OU student
 - G(x): x is a genius
 
-What does Ax (S(x) → G(x)) mean?
-- "If
+What does ∀x (S(x) → G(x)) mean?
+- "If x is a UMBC student, then x is a genius" or
+- "All UMBC students are geniuses"
 
 #### Existential Quantification
 Existentially quantified setnece: There exists an x in the universe of discourse for which P(x) is true
 
-Using the existential quantifier E:
-Ex P(x) "There is an x such that P(x)" or "There is at least one x such that P(x) 
+Using the existential quantifier ∃:
+∃x P(x) "There is an x such that P(x)" or "There is at least one x such that P(x)"
+- Note: ∃x P(x) is either true or false, so it is a proposition, but no propositional function
 
 Ex: 
 - P(x): x is a OU professor
 - G(x): x is a genius
 
-What does Ex (P(x) AND G(x)) mean? 
+What does ∃x (P(x) AND G(x)) mean? 
+- "There is an x such that x is a UMBC professor and x is a genius" or
+- "At least one UMBC professor is a genius"
+
+Quantification Example
+Let the universe of discourse be all real numbers. What does ∀x∃y (x + y = 320) mean?
+- "For every x there exists a y so that x + y = 320"
+
+- Is it true? Yes
+- Is it true for the natural numbers? No
 
 #### Disproof by Counterexample
-- A counterexample to Ax (Px) is an object c so that P(x) is false
-- Statements such as Ax (P(x) → Q(x)) can be disproved by simply proi=viding a counterexample
+- A counterexample to ∀x (Px) is an object c so that P(c) is false
+- Statements such as ∀x (P(x) → Q(x)) can be disproved by simply providing a counterexample
+  - Statement: "All birds can fly"
+  - Disproved by counterexample: Penguin
 
 ## Set Theory
 
 Set: unordered collection of objects ("elements")
 - a∈ A "a is an element of A"
 - a∉ A "a is not an element of A"
-- A = {a1, a2, ..., an} "A contains..."
+- A = {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>} "A contains..."
 - Order of elements is meaningless
 - It does not matter how often the same element is listed (when listing what elements are in the set, you only name each element once, no duplicates)
 
@@ -223,11 +236,11 @@ Examples for Sets
 - "Standard" Sets:
 - Natural Numbers N =
 - Integers Z =
-- Positive Integers Z+ = 
+- Positive Integers Z<sup>+</sup> = 
 - Real Numbers R = 
 - Rational Numbers Q =
 
-- A = O (empty/null set)
+- A = ∅ (empty/null set)
 - A = {z}
     - Note: zE A, but z != {z}
 - A = {{b, c}, {c, x, d}}
@@ -236,5 +249,5 @@ Examples for Sets
 - A
 
 ### Subsets
-- A U B (A is a subset of B)
-- A U B if and only if every element of A is also an element of B
+- A ⊆ B (A is a subset of B)
+- A ⊆ B if and only if every element of A is also an element of B
