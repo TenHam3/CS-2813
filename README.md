@@ -259,11 +259,12 @@ Examples for Sets
 - We can formalize this as A ⊆ B ↔ ∀x(x∈A → x∈B)
 
 #### Useful Rules for Subsets
-
+- A = B ↔ (A ⊆ B) AND (B ⊆ A)
+- (A ⊆ B) AND (B ⊆ C) → A ⊆ C
 - ∅ ⊆ A for any set A
 - A ⊆ A for any set A
 
-Proper Subsets:
+#### Proper Subsets:
 - A ⊂ B "A is a proper subset of B"
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/455c51e4-cbb8-46e6-8838-3faf62571401)
@@ -277,9 +278,14 @@ Ex:
 - D = { x ∈ N | x <= 7000} |D| = 7001
 - E = { x ∈ N | x > 7000} E is infinite
 
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/e4501707-1853-49ef-9600-7b7867fd1893)
+
+- Since both sets have infinite elements, their cardinalities are infinity. However, even though it may seem that the first set would have twice the amount of elements as the second set, they actually have the same cardinality because you can match an element of the first set to the second set by multiplying it by two. This can continue for infinity so you can always have a one-to-one pairing with elements from both sets.
+
 Cardinality of Finite Sets
 - The cardinality of the set
-$ N<sub>k</sub> - {n | n
+- N<sub>k</sub> = {n | n ∈ N AND n < k} is k
+- If there is a bijection between two sets, they have the same cardinality
 
 #### The Power Set
 - P(A) "Power set of A"
@@ -293,36 +299,56 @@ Ex:
 - Note: |A| = 0, |P(A)| = 1
 
 Cardinality of Power Sets:
-- |P(A)| = $2<sup>|A|</sup>$
+- |P(A)| = 2<sup>|A|</sup>
 - Imagine each element in A has an "on/off" switch
-- Each possible switch configuration in A corresponds to one element in $2<sup>A</sup>$
+- Each possible switch configuration in A corresponds to one element in 2<sup>A</sup>
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/1b38b5fe-9b62-4ce9-91e6-1426f777bb0b)
 
 #### Cartesian Product
-- The ordered n-tuple (a1, a2, a3, ..., an) is an ordered collection of objects
-- T
+- The ordered n-tuple (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ..., a<sub>n</sub>) is an ordered collection of objects
+- Two ordered n-tuples (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ..., a<sub>n</sub>) and (b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>, ..., b<sub>n</sub>) are equal if and only if they contain exactly the same elements in the same order, i.e. a<sub>i</sub> = b<sub>i</sub> for 1 <= i <= n. 
 - The Cartesian Product of two sets is defined as:
 - A X B = {(a, b) | a∈ A AND b∈ B} ≠ B X A
-- ads
+Ex: A = {x, y}, B = {a, b, c}
+A X B = {(x, a), (x, b), (x, c), (y, a), (y, b), (y, c)}
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/22e3b43c-0c8f-4d2f-845e-5b94bc50712a)
 
 Note that:
 - A X ∅ = ∅
 - ∅ X A = ∅
+- For non-empty sets A and B: A ≠ B ↔ (A X B ≠ B X A)
+- |A X B| = |A| * |B|
+
+The Cartesian Product of two or more sets is defined as:
+A<sub>1</sub> X A<sub>2</sub> X ... X A<sub>n</sub> = {(a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>) | a<sub>i</sub> ∈ A for 1 <= i <= n}
 
 #### Set Operations
-- Union: A U B = {x | x∈ A OR x∈ B}
-- Ex:
-- Intersection: A n B = {x | x∈ A AND x∈ B}
-
-- Complements of both operations are all elements outside the sets and for intersection, it also includes elements exclusive to either set
+- Union: A ∪ B = {x | x∈ A OR x∈ B}
+- Ex: A = {a, b}, B = {b, c, d}
+    - A ∪ B = {a, b, c, d}
+- Intersection: A ∩ B = {x | x∈ A AND x∈ B}
+- Ex: A = {a, b}, B = {b, c, d}
+    - A ∩ B = {b}
 
 - Two sets are called disjoint if their intersection is empty, that is, they share no elements:
-- A n B = ∅
+- A ∩ B = ∅
 - The difference between two sets A and B contains exactly those elements of A that are not in B:
-- A - B
+- A - B = {x | x∈ A AND x∉ B}
+- Ex: A = {a, b}, B = {b, c, d}, A - B = {a}
 
 The complement of a set A contains exactly those elements under consideration that are not in A:
+- A<sup>c</sup> = U - A (can also be denoted with A with a bar/line over it)
+- Ex: U = N, B = {250, 251, 252, ...}
+    - $B<sup>c</sup> = {0, 1, 2, ..., 248, 249}
 
 #### Set Identities
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/da2355c2-802c-4db5-afd7-8df3c13230e0)
 
+#### Proving Set Equivalence
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/c42b7387-0232-4331-9d6a-baa1883b0572)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/c85c588e-5c94-41da-824f-57c36ee663f2)
