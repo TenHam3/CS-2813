@@ -352,3 +352,33 @@ The complement of a set A contains exactly those elements under consideration th
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/c42b7387-0232-4331-9d6a-baa1883b0572)
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/c85c588e-5c94-41da-824f-57c36ee663f2)
+
+## Algorithms
+
+An algorithm is a finite set of precise instructions for performing a computation or solving a problem
+
+Properties of Algorithms:
+- input from a specified set
+- output from a specified set (solution)
+- definiteness of every step in the computation
+- correctness of output for every possible input
+- finiteness of the number of calculation steps
+- effectiveness of each calculation step
+- generality for a class of problems
+
+Ex: an algorithm that finds the maximum element in a finite sequence
+
+Set the first element as the max and iterate through the entire data set comparing each element to the current max. If the current element is larger than the current max, assign it to the max.
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/3348a2f7-04ad-431c-b610-73e6f17d88fa)
+
+Ex: a linear search algorithm, that is, an algorithm that linearly searches a sequence for a particular element.
+
+Iterate through each element and compare the current element to the target value. If they are equal, the element is found and you return the position where it's located. If you iterate through all elements, the element is not in the data set and you return an invalid index. Since in the worst case scenario you have to iterate through n elements, the efficiency or time complexity of it can be described as O(n) or (c * n) (<- said as order of n).
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/ab40e027-f36f-4c4c-91b4-8598847fce71)
+
+Binary Search
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/0705cc71-57b2-46e8-99bd-d670eb565c40)
+
