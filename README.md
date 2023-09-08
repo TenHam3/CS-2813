@@ -382,3 +382,10 @@ Binary Search
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/0705cc71-57b2-46e8-99bd-d670eb565c40)
 
+### Sorting Algorithms
+
+Ordering a list of elements
+
+#### Bubble Sort
+
+The largest elements bubble their way to the top (end) of the array each iteration of the outer loop
