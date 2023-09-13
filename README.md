@@ -378,7 +378,7 @@ Iterate through each element and compare the current element to the target value
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/ab40e027-f36f-4c4c-91b4-8598847fce71)
 
-Binary Search
+### Binary Search
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/0705cc71-57b2-46e8-99bd-d670eb565c40)
 
@@ -389,3 +389,50 @@ Ordering a list of elements
 #### Bubble Sort
 
 The largest elements bubble their way to the top (end) of the array each iteration of the outer loop
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/efa48036-2af8-4838-b153-76aef44d8385)
+
+## Functions
+
+a **function** f from a set A to a set B is an **assignment** of **exactly one** element of B to each element of A
+We write
+- f(a) = b
+- if b is the unique element of B assigned by the function f to the element a of A
+- If if is a function from A to B, we write
+- f: A->B
+- (note: Here, "->" has nothing to do with if... then)
+
+- If f: A->B, we say that A is the **domain** of f and B is the **codomain** of f
+- If f(a) = b, we say that b is the **image** of a and a is the pre-image of b
+- The range of f: A->B is the set of all images of elements of A
+- We say that f: A->B maps A to B
+
+Let us take a look at the function f: P->C with 
+- P = {Linda, Max, kathey, Peter}
+- C = {Boston, New York, Hong Kong, Moscow}
+
+- f(Linda) = Moscow
+- f(Max) = Boston
+- f(Kathy) = Hong Kong
+- f(Peter) = New York
+
+If the domain of our function f is large, it is convenient to specify f with a formula, e.g.:
+- f: R->R
+- f(x) = 2x
+This leads to 
+- f(1) = 2
+- f(3) = 6
+- f(-3) = -6
+
+Let f1 and f2 be functions from A to R. Then the sum and the product of f1 and f2 are also functions from A to R defined by:
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/8997342c-26fa-4a9c-9a74-c2b72c1234ae)
+
+We already know that the range of a function f: A->B is the set of all images of elements aEA.
+
+If we only regard a subset SUA, the set of all images of elements sES is called image of S
+
+### Inversion
+
+An interesting property of bijections is that they have an inverse function
+
