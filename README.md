@@ -404,17 +404,31 @@ We write
 
 - If f: A->B, we say that A is the **domain** of f and B is the **codomain** of f
 - If f(a) = b, we say that b is the **image** of a and a is the pre-image of b
-- The range of f: A->B is the set of all images of elements of A
-- We say that f: A->B maps A to B
+- The **range** of f: A->B is the set of all images of elements of A
+- We say that f: A->B **maps** A to B
 
 Let us take a look at the function f: P->C with 
-- P = {Linda, Max, kathey, Peter}
+- P = {Linda, Max, Kathy, Peter}
 - C = {Boston, New York, Hong Kong, Moscow}
 
 - f(Linda) = Moscow
 - f(Max) = Boston
 - f(Kathy) = Hong Kong
 - f(Peter) = New York
+- Here, the range of f is C
+
+Let us respecify f as follows:
+- f(Linda) = Moscow
+- f(Max) = Boston
+- f(Kathy) = Hong Kong
+- f(Peter) = Boston
+- Is f still a function? Yes
+- What is its range? {Moscow, Boston, Hong Kong}
+
+Other ways to represent f:
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/54065781-ecba-44a4-b2ea-070ec8cf4751)
+
 
 If the domain of our function f is large, it is convenient to specify f with a formula, e.g.:
 - f: R->R
@@ -424,15 +438,62 @@ This leads to
 - f(3) = 6
 - f(-3) = -6
 
-Let f1 and f2 be functions from A to R. Then the sum and the product of f1 and f2 are also functions from A to R defined by:
+Let f1 and f2 be functions from A to R. Then the **sum** and the **product** of f1 and f2 are also functions from A to R defined by:
+- (f1 + f2)(x) = f1(x) + f2(x)
+- (f1f2)(x) = f1(x)f2(x)
 
-![image](https://github.com/TenHam3/CS-2813/assets/109705811/8997342c-26fa-4a9c-9a74-c2b72c1234ae)
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/d2224ed8-b3d5-4112-bd6f-791faeae0dd1)
 
-We already know that the range of a function f: A->B is the set of all images of elements aEA.
+We already know that the **range** of a function f: A->B is the set of all images of elements a∈A.
 
-If we only regard a subset SUA, the set of all images of elements sES is called image of S
+If we only regard a **subset** S⊆A, the set of all images of elements s∈S is called **image** of S
+- We denote the image of S by f(S):
+- f(S) = {f(s) | s∈S}
 
-### Inversion
+Let us look at the well known function: 
+- f(Linda) = Moscow
+- f(Max) = Boston
+- f(Kathy) = Hong Kong
+- f(Peter) = Boston
+
+What is the image of S = {Linda, Max}?
+- f(S) = {Moscow, Boston}
+
+What is the image of S = {Max, Peter}
+- f(S) = {Boston}
+
+### Properties of Functions
+A function f: A->B is said to be **one-to-one** (or **injective**) if and only if 
+- ∀x, y∈A (f(x) = f(y) -> x = y)
+- In other words, f is one-to-one if and only if it does not map two distinct elements of A onto the same element of B
+
+A function f: A->B with A, B ⊆ R is called **strictly increasing** if
+- ∀x, y∈A (x < y -> f(x) < f(y)) and **strictly decreasing** if
+- ∀x, y∈A (x < y -> f(x) > f(y))
+- Obviously, a function that is either strictly increasing or strictly decreasing is **one-to-one**
+
+A function f: A->B is said to be **onto** (or **surjective**) if and only if for every element b∈B there is an element a∈A with f(a) = b
+- In other words, f is onto if and only if its **range** is its **entire codomain**
+
+A function f: A->B is a one-to-one correspondence, or a bijection, if and only if it is both one-to-one and onto
+Obviously, if f is a bijection, and A and B are finite sets, then |A| = |B|
+#### Inversion
 
 An interesting property of bijections is that they have an inverse function
 
+The inverse function of the bijection f: A->B is the function $f^{-1}$: B->A with $f^{-1}$(b) = a whenever f(a) = b
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/b8f231cd-e82f-4039-ba28-6dd796bfbb18)
+
+#### Composition
+
+The **composition** of two functions g: A->B and f: B->C denoted by f∘g, is defined by:
+- (f∘g)(a) = f(g(a))
+This means that
+- first, function g is applied to element a∈A, mapping it onto an element of B,
+- then the function f is applied to this element of B, mapping it onto an element of C
+- Therefore, the composite function maps from A to C
+
+The composite of a function and its inverse:
+- ($f^{-1}$∘f)(x) = $f^{-1}$(f(x)) = x
+- The composite of a function and its inverse is the **identity function** i(x) = x
