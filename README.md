@@ -500,3 +500,47 @@ The composite of a function and its inverse:
 - ($f^{-1}$∘f)(x) = $f^{-1}$(f(x)) = x
 - The composite of a function and its inverse is the **identity function** i(x) = x
 
+## Mathematical Reasoning
+
+We need mathematical reasoning to 
+- determine whether a mathematical argument is correct or incorrect and
+- construct mathematical arguments
+Mathematical reasoning is not only important 
+
+Terminology
+- An **axiom** is a basic assumption about mathematical structured that needs no proof
+- We can use a **proof** to demonstrate that a particular statement is true. A proof consists of a sequence of statements that form an argument
+- The steps that connect the statements in such a sequence are the **rules of inference**
+- Cases of incorrect reasoning are called **fallacies**
+- A **theorem** is a statement that can be shown to be true
+- A **lemma** is a simple theorem used as an intermediate resulti n the proof of another theorem
+- A **corollary** is a proposition that follows directly froma theorem that has been proved
+- A **conjecture** is a statement whose truth value is unknown. Once it is proven, it becomes a theorem.
+
+### Methods of Proof
+
+### Types of Proofs
+Suppose we wish to prove an implication p $\longrightarrow$ q. Here aer some strategies we have available to try:
+- Trivial Proof: If we know q is true then p $\longrightarrow$ q is true regardless of the truth value of p.
+- Vacuous Proof: If p is a conjunction of other hypotheses and we know one or more of tehse hypotheses is false, then p is false and so p $\longrightarrow$ q is vacuously true regardless of the truth value of q
+- Direct Proof: Assume p, and then use the rules of inferece, axioms, definitions, and logical equivalences to prove q
+- Indirect Proof or Proof by Contradiction: Assume p and $\neg$ q and derive a contradiction r $\land \neg$ r.
+- Proof by Contrapositive: (Special case of Proof by Contradiction)
+      - Give a direct proof of $\neg q \longrightarrow \neg p$
+      - Assume $\neg q$ and then use the rules of inference, axioms, definitions, and logical equivalences to prove $\neg p$
+- Proof by Cases: If the hypothesis p can be separated into cases p1 $\lor$ p2 $\lor$ ... $\lor$ pk, prove each of hte
+
+### Induction
+- The **principle of mathematical induction** is a useful tool for proving that a certain predicate is true for **all natural numbers**
+- It cannot be used to discover theorems, but only to prove them
+
+If we have a propositional function P(n), and we want to prove that P(n) is true for any natural number n, we do the following:
+- Show that P(0)* is true (basis step)
+- Show that if P(n) then P(n + 1) for any n $\in$ N (inductive step)
+- Then P(n) must be true for any n $\in$ N (conclusion)
+
+There is another proof technique taht is very similar to the principle of matmhematical induction. It is called the **second principle of mathematical induction**. It can be used to prove that a propositional function P(n) is true for any natural number n
+
+- Show that P(0) is true (basis step)
+- Show that if P(0) and P(1) and ... and P(n), then P(n + 1) for any n $\in$ N (inductive step)
+- Then P(n) must be true for any n $\in$ N (conclusion)
