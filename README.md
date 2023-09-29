@@ -505,7 +505,7 @@ The composite of a function and its inverse:
 We need mathematical reasoning to 
 - determine whether a mathematical argument is correct or incorrect and
 - construct mathematical arguments
-Mathematical reasoning is not only important 
+Mathematical reasoning is not only important for conducting **proofs** and **program verification**, but also for **artificial intelligence** systems (drawing inferences)
 
 Terminology
 - An **axiom** is a basic assumption about mathematical structured that needs no proof
@@ -528,7 +528,7 @@ Suppose we wish to prove an implication p $\longrightarrow$ q. Here aer some str
 - Proof by Contrapositive: (Special case of Proof by Contradiction)
       - Give a direct proof of $\neg q \longrightarrow \neg p$
       - Assume $\neg q$ and then use the rules of inference, axioms, definitions, and logical equivalences to prove $\neg p$
-- Proof by Cases: If the hypothesis p can be separated into cases p1 $\lor$ p2 $\lor$ ... $\lor$ pk, prove each of hte
+- Proof by Cases: If the hypothesis p can be separated into cases p1 $\lor$ p2 $\lor$ ... $\lor$ pk, prove each of the propositions, $p1 \longrightarrow q$, $p2 \longrightarrow q$, ..., $pk \longrightarrow q$ separately
 
 ### Induction
 - The **principle of mathematical induction** is a useful tool for proving that a certain predicate is true for **all natural numbers**
@@ -544,3 +544,63 @@ There is another proof technique taht is very similar to the principle of matmhe
 - Show that P(0) is true (basis step)
 - Show that if P(0) and P(1) and ... and P(n), then P(n + 1) for any n $\in$ N (inductive step)
 - Then P(n) must be true for any n $\in$ N (conclusion)
+
+## Sequences
+Sequences represtn ordered lists of elements
+- A sequence is defined as: a function from a subset of N to a set S
+- We use the notation a<sub>n</sub> to denote the image of the integer n. We call a<sub>n</sub> a term of the sequence.
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/675d7690-c890-4660-a87d-3216d3dd0a9d)
+
+- We use the notation {a<sub>n</sub> to describe a sequence.
+- Important: Do not confuse this with the {} used in set notation.
+- It is convenient to describe a sequence with a formula
+- For example, the sequence on the previous slide can be specified as {a<sub>n</sub>}, where a<sub>n</sub> = 2n
+
+### Strings 
+Finite sequences are also called strings, denoted by a<sub>1</sub>a<sub>2</sub>a<sub>3</sub>...a<sub>n</sub>
+- The **length** of a string S is the number of terms (characters) that it consists of
+- The **empty string** contains no terms at all. It has length zero
+
+### Summations
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/6c5f361d-cdda-4777-94f2-383ac4cbc8dd)
+
+- It represents the sum a<sub>m</sub> + a<sub>m + 1</sub> + a<sub>m + 2</sub> + ... + a<sub>n</sub>
+- The variable **j** is called the **index of summation**, running from its **lower limit m** to its **upper limit n**
+- We could as well have used any other letter to denote this index
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/a7b859cd-9855-4a02-812e-0fed7e39cb55)
+
+#### Geometric Series
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/0ac0d45a-10d0-4b24-aa44-4abf974fae41)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/d5c00e28-55c3-4ade-a8dc-409396652d94)
+
+#### Double Summations
+Corresponding to nested loops in C or Java, there is also double (or triple etc.) summation:
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/fa85ab51-89f8-4236-8023-7b6d4be2769c)
+
+## Recursion
+
+**Recursion** is a principle closely related to mathematical induction
+- In a **recursive definition**, an object is defined in terms of itself.
+- We can recursively define **sequences**, **functions**, and **sets**
+
+We can use the following method to define a function with the natural numbers as its domain:
+
+- Specify
+- asdf
+
+asdf
+
+### Recursively Defined Sets
+
+If we want to recursively define a set, we need to provide two things:
+- an initial set of element,
+- rules for the construction of additional elements from elements in the set
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/5f95f494-c0af-4535-91f0-693ed5fc3a68)
+
