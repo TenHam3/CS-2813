@@ -604,3 +604,46 @@ If we want to recursively define a set, we need to provide two things:
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/5f95f494-c0af-4535-91f0-693ed5fc3a68)
 
+## Counting
+
+### Basic Counting Principles
+
+Counting problems are of the kind:
+- How many different 8-letter passwords are there
+- How many possible ways are there to pick 11 soccer players out of a 20-player team
+- Most importantly, counting is the basis for computing **probabilities of discrete events**
+- What is the probability of winning the lottery
+
+The Sum Rule: If a task can be done in n<sub>1</sub> ways and a second task in n<sub>2</sub> ways, and if these two tasks cannot be done at the same time, then there are n<sub>1</sub> + n<sub>2</sub> ways to do either task
+
+Ex:
+- The department will award a free computer to either a CS student or a CS professor
+- How many different choices are there, if there are 530 students and 15 professors
+- There are 530 + 15 = 545 choices
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/d24e22fc-b5ae-4240-b2f2-bcdfc0f234a9)
+
+The Product Rule: Suppose that a procedure can be broken down into two successive tasks. If there are n<sub>1</sub> ways to do the first task and n<sub>2</sub> ways to do the second task after the first task has been done, then there are n<sub>1</sub>n<sub>2</sub> ways to do the procedure
+
+Ex: How many different license plates are there that contain exactly three English letters?
+- There are 26 possibilities to pick the first letter, then 26 possibilities for the second one, and 26 for the last one
+- So there are 26 * 26 * 26 = 17576 different license plates
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/75560367-3e43-4965-8af4-181d9f97e3fb)
+
+The sum and product rules can also be phrased in terms of set theory
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/dc827f99-4588-4b59-ad30-4a4120292d03)
+
+Inclusion-Exclusion
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/155633ba-6964-4c36-95c5-fe16b4434c6e)
+
+### Pigeonhole Principle
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/117c9711-200b-42b8-bf0e-384d86a6c3f4)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/30a2e473-5861-406d-92d1-dc88ba8df62d)
+
+### Permutations and Combinations
+
