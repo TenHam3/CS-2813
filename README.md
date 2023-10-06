@@ -647,3 +647,32 @@ Inclusion-Exclusion
 
 ### Permutations and Combinations
 
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/1603b634-eced-4683-a09d-ba2cf7b7cca3)
+
+- A permutation of a set of distinct objects is an ordered arrangement of these objects
+- An ordered arrangement of r elements of a set is called an r-permutation
+- Denoted by P(n, r)
+- We can calculate P(n, r) with the product rule:
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/51346e88-221d-4358-b464-1bfb932a69ef)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/cf83941b-8c5d-4e1d-9db6-43f338df8e28)
+
+- An r-combination of elements of a set is an unordered selection of r elements from the set
+- Thus, an r-combination is simply a subset of the set with r elements
+- The number of r-combinations of a set with n-distinct elements is denoted by C(n, r)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/91b101e6-6b8e-435f-b567-ece0a9f864b6)
+
+Summary:
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/ad4a62c1-334b-4624-82a8-8735240de5fc)
+
+### Discrete Probability
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/3f70d6da-dc3c-42ca-8f1d-f0a1629c3959)
+
+#### Independent Events
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/448147fe-152b-4251-8461-cdcdaa8cf981)
+
