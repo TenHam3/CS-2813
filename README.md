@@ -519,6 +519,11 @@ Terminology
 
 ### Methods of Proof
 
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/5e2bf97e-bfaa-49cb-ba24-340156618e5f)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/30bee46d-4690-4ded-9991-0f19272bec1c)
+
+
 ### Types of Proofs
 Suppose we wish to prove an implication p $\longrightarrow$ q. Here aer some strategies we have available to try:
 - Trivial Proof: If we know q is true then p $\longrightarrow$ q is true regardless of the truth value of p.
