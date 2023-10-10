@@ -681,3 +681,42 @@ Summary:
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/448147fe-152b-4251-8461-cdcdaa8cf981)
 
+## Relations
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/b7f479e1-81a9-4adf-8c1f-bc9776c09cdd)
+
+- If we want to describe a relationship between elements of two sets A and B, we can use ordered pairs with their first element taken from A and their second element taken from B
+- Since this is a relation between two sets, it is called a binary relation
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/7df3eeb4-9e01-43d5-bdb7-e750687bf13a)
+
+- When (a, b) belongs to R, a is said to be related to b by R
+- A function f from a set A to a set B assigns a unique element of B to each element of A
+- The graph of f is the set of ordered pairs (a, b) such that b = f(a)
+- Since the graph of f is a subset of AXB, it is a relation from A to B
+- Moreover, for each element a of A, there is exactly one ordered pair in the graph that has a as its first element
+
+- A relation on the set A is a relation from A to A
+- In other words, a relation on the set a is a subset of AXA
+
+### Types of Relations
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/e9fdc22c-50cf-4003-8d2f-ff82d261aa92)
+
+- A relation R on a set A is called reflexive if (a, a) $\in$ R for every element a  $\in$ A
+- A relation on a set A is called irreflexive if (a, a) $\notin$ R for every element a $\in$ A
+- A relation R on a set A is called symmetric if (b, a) $\in$ R whenever (a, b) $\in$ R for all a, b $\in$ R
+- A relation R on a set A is called antisymmetric if a = b whenever (a, b) $\in$ R and (b, a) $\in$ R
+- A relation R on a set A is called asymmetric if (a, b) $\in$ R implies that (b, a) $\notin$ R for all a, b $\in$ A
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/fd4f32a4-35d8-4159-8cc5-c543a8c1caea)
+
+- A relation R on a set A is called transitive if whenever (a,b) $\in$ R and (b, c) $\in$ R, then (a, c) $\in R for a, b, c $\in$ A
+
+### Combining Relations
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/ba76516d-d1a9-40d8-b338-3b1770651dfd)
+
+- Let R be a relation from set A to a set B and S a relation from a set B to a set C. The composite of R and S is the relation consisting of ordered pairs (a, c) where a $\in$ A, c $\in$ C, and for which there exists an element b $\in$ B such that (a, b) $\in$ R and (b, c) $\in$ S. We denote the composite of R and S by S $\circ$ R
+- In other words, if a relation R contains a pair (a, b) and relation S contains a pair (b, c), then S $\circ$ R contains a pair (a, c)
+
