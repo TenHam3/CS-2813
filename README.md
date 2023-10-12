@@ -720,3 +720,9 @@ Summary:
 - Let R be a relation from set A to a set B and S a relation from a set B to a set C. The composite of R and S is the relation consisting of ordered pairs (a, c) where a $\in$ A, c $\in$ C, and for which there exists an element b $\in$ B such that (a, b) $\in$ R and (b, c) $\in$ S. We denote the composite of R and S by S $\circ$ R
 - In other words, if a relation R contains a pair (a, b) and relation S contains a pair (b, c), then S $\circ$ R contains a pair (a, c)
 
+### Databases and Relations
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/358ef5f3-fb09-4c11-aaf0-364fce8546ba)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/4f887c47-fd86-4ef3-832d-144d28cd1510)
+
