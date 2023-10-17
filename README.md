@@ -650,6 +650,8 @@ Inclusion-Exclusion
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/30a2e473-5861-406d-92d1-dc88ba8df62d)
 
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/6426ece8-5c17-4c77-a01a-ff5113207b05)
+
 ### Permutations and Combinations
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/1603b634-eced-4683-a09d-ba2cf7b7cca3)
