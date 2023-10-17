@@ -720,9 +720,65 @@ Summary:
 - Let R be a relation from set A to a set B and S a relation from a set B to a set C. The composite of R and S is the relation consisting of ordered pairs (a, c) where a $\in$ A, c $\in$ C, and for which there exists an element b $\in$ B such that (a, b) $\in$ R and (b, c) $\in$ S. We denote the composite of R and S by S $\circ$ R
 - In other words, if a relation R contains a pair (a, b) and relation S contains a pair (b, c), then S $\circ$ R contains a pair (a, c)
 
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/2922e0fe-f962-44dc-8b79-0600cedacb98)
+
+- Let R be a relation on the set A. The powers $R^n$, n = 1, 2, 3, ..., are defined inductively by
+- $R^1 = R$
+- $R^{n + 1} = R^n \circ R$
+- In other words: $R^n = R \circ R \circ ... \circ R (n times)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/799bb53f-d83c-4445-bc0f-e407adb31e05)
+
+### n-ary Relations
+
+- In order to study an interesting application of relations, namely databases, we first need to generalize the concept of binary relations to n-ary relations
+- Let $A_1$, $A_2$, ..., $A_n$ be sets. An n-ary relation on these sets is a subset of $A_1 X A_2 X ... X A_n$
+- The sets $A_1$, $A_2$, ..., $A_n$ are called the domains of the relation, and n is called the degree
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/cc72f71e-854a-4196-b598-5debcb2d6651)
+
+
 ### Databases and Relations
+
+- A database consists of n-tuples called records, which are made up of fields
+- These fields are the entries of the n-tuples
+- The relational data model represents a database as an n-ary relation, that is, a set of records
+- A row in a database corresponds to the records and each column corresponds to the fields
+- A domain of an n-ary relation is called a primary key if the n-tuples are uniquely determined by their values from this domain
+    - This means that no two records have the same value from the same primary key
+- The current collection of n-tuples in a relation is called the extension of the relation. The more permanent part of a database, including the name and attributes of the database is called its intension
+    - Therefore we should use a primary key of the intension of the database, containing all n-tuples that can ever be included in the database
+- Combinations of domains can also uniquely identify n-tuples in an n-ary relation
+- When the values of a set of domains determine an n-tuple in a relation, the Cartesian product of these domains is called a composite key
+- We can apply a variety of operations on n-ary relations to form new relations
+- The projection $P_{i_1}$, ${i_2}$, ..., ${i_m}$ maps the n-tuple ($a_1$, $a_2$, ..., $a_n$) to the m-tuple ($a_{i_1}$, $a_{i_2}$, ..., $a_{i_m}$ where m $\leq$ n
+- In other words, $P_{i_1}$, ${i_2}$, ..., ${i_m}$ keeps the m components $a_{i_1}$, $a_{i_2}$, ..., $a_{i_m}$ of an n-tuple and deletes the other (n - m) components
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/19abf577-38dc-4798-a1e3-aab42f99cb8e)
+
+- We can use the join operation to combine two tables into one if they share some identical fields
+- In other words, the join operator $J_p$ produces a new relation from two relations by combining all m-tuples of the first relation with all n-tuples of the second relation, where the last p components of the m-tuples agree with the first p components of the n-tuples
+- p refers to the number of fields the two relations have in common and join on those fields
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/358ef5f3-fb09-4c11-aaf0-364fce8546ba)
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/4f887c47-fd86-4ef3-832d-144d28cd1510)
 
+- We already know different ways of representing relations. We will now take a closer look at two ways of representation: Zero-one matrices and directed graphs
+- If R is a relation from A = {$a_1$, $a_2$, ..., $a_m$} to B = {$b_1$, $b_2$, ..., $b_n$}, then R can be represented by the zero-one matrix $M_R = [m_{ij}] with
+    - $m_{ij}$ = 1 if ($a_i$, $b_j$) $\in$ R and
+    - $m_{ij}$ = 0 if ($a_i$, $b_j$) $\notin$ R
+- Note that for creating this matrix we first need to list the elements in A and B in a particular but arbitrary order
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/0487f427-a25e-4f10-97de-8731de78353a)
+
+- Matrices representing a relation on a set (a relation from A to A) are square matrices
+- Matrices representing reflexive relations have 1 on all elements on the diagonal
+- Matrices representing symmetric relations are symmetric, meaning that $M_R = (M_R)^T$
+    - $(M_R)^T$ is called the transpose of $M_R$ and is obtained by making all the rows columns/making all the columns rows
+- The Boolean operations join and meet can be used to determine the matrices representing the union and intersection of two relations, respectively
+- To obtain the join of two zero-one matrices, we apply the Boolean function "or" to all corresponding elements in the matrices
+- To obtain the meet of two zero-one matrices, we apply the Boolean function "and" to all corresponding elements in the matrices
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/a1417c52-77a9-4c4e-9f04-3d2484e8927b)
+  
