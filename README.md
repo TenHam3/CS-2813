@@ -784,3 +784,18 @@ Summary:
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/a1417c52-77a9-4c4e-9f04-3d2484e8927b)
   
+## Boolean Algebra
+
+Boolean algebra provides the operations and the rules for working with the set {0, 1}
+There are the rules that underlie electronic circuits, also fundamental to Very-large-scale integration (VLSI) esign
+We are going to focus on three operations
+- Boolean complementation
+- Boolean sum
+- Boolean product
+
+### Boolean Operations
+- The complement is denoted by a bar. It is defined by
+    - $\overline{0}$ = 1 and $\overline{1}$ = 0
+- asdf
+
+Let B = {0, 1}. The variable x is called a Boolean variable if it assumes values only from B.
