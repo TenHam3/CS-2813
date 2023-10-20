@@ -675,6 +675,9 @@ Summary:
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/ad4a62c1-334b-4624-82a8-8735240de5fc)
 
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/bf39194b-7154-4441-a513-b79381afe07a)
+
+
 ### Discrete Probability
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/3f70d6da-dc3c-42ca-8f1d-f0a1629c3959)
