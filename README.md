@@ -818,3 +818,31 @@ We are going to focus on three operations
 - A literal is a Boolean variable or its complement
 - A minterm of the Boolean variables $x_1$, $x_2$, ..., $x_n$ is a Boolean product $y_1 y_2 ... y_n$, where $y_i = x_i$ or $y_i = \overline{x_i}$
 - A minterm is a product of n literals, with one literal for each variable
+- A minterm is essentially just values of $x_i$ that make the conjunction of $x_1$, $x_2$, ..., $x_n$ true or conjunction of $x_1$, $x_2$, ..., $x_n$ false
+- The Boolean functions F and G of n variables are equal if and only if F($b_1$, $b_2$, ..., $b_n$) = G($b_1$, $b_2$, ..., $b_n$) whenever $b_1$, $b_2$, ..., $b_n$ belong to B
+- Two different Boolean expressions that represent the same Boolean function are called equivalent
+- The complement of the Boolean function F is the function -F, where -F($b_1$, $b_2$, ..., $b_n$) = $\overline{F(b_1, b_2, ..., b_n)}$
+- Let F and G be Boolean functions of degree n. The Boolean sum F + G and Boolean product FG are then defined by:
+    - (F + G)($b_1$, $b_2$, ..., $b_n$) = F($b_1$, $b_2$, ..., $b_n$) + G($b_1$, $b_2$, ..., $b_n$)
+    - (FG)($b_1$, $b_2$, ..., $b_n$) = F($b_1$, $b_2$, ..., $b_n$)G($b_1$, $b_2$, ..., $b_n$)
+ 
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/071d2ee2-c6bc-4eac-a566-9defd2c87ef8)
+
+### Duality
+
+We can derive additional identities with the help of the dual of a Boolean expression
+- The dual of a Boolean expression is obtained by interchanging Boolean sums and Boolean products and interchanging 0s and 1s.
+    - Essentially switch any + to $\cdot$ and vice versa, and switch any 1 to 0 and vice versa
+- The dual of a function f represented by a Boolean expression is the function represented by the dual of this expression. This dual function, denoted by $F^d$, does not depend on the particular Boolean expression used to represent F. An identity between functions represented by Boolean expressions remains valid when the duals of both sides of the identity are taken. This result, called the duality principle, is useful for obtaining new identities.
+- All the properties of Boolean functions and expressions that we have discovered also apply to other mathematical structures such as propositions and sets and the operations defined on them
+- If we can show that a particular structure is a Boolean algebra, then we know that all results established about Boolean algebras apply to this structure
+- For this purpose, we define a Boolean algebra as follows:
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/f8e615d8-4514-404c-ad6f-7281a8ecf07d)
+
+### Logic Gates
+
+- Electronic circuits consist of so-called gates. There are three basic types of gates:
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/18568955-df1c-4d09-b0e4-da19cd31b9ca)
+
