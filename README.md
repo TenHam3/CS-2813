@@ -799,6 +799,22 @@ We are going to focus on three operations
 ### Boolean Operations
 - The complement is denoted by a bar. It is defined by
     - $\overline{0}$ = 1 and $\overline{1}$ = 0
-- asdf
+- The Boolean sum, denoted by + or OR, has the following values:
+    - 1 + 1 = 1, 1 + 0 = 1, 0 + 1 = 1, 0 + 0 = 0
+- The Boolean product, denoted by $\cdot$ or AND, has the following values:
+    - 1 + 1 = 1, 1 + 0 = 0, 0 + 1 = 0, 0 + 0 = 0
 
-Let B = {0, 1}. The variable x is called a Boolean variable if it assumes values only from B.
+- Let B = {0, 1}. The variable x is called a Boolean variable if it assumes values only from B. A function from $B^n$, the set {($x_1$, $x_2$, ..., $x_n$) | $x_i \in B$, $1 \leq i \leq n$}, to B is called a Boolean function of degree n. Boolean functions can be represented using expressions made up from the variables and Boolean operations 
+
+- The Boolean expressions $E_1$ and $E_2$ in the variables $x_1$, $x_2$, ..., $x_n$ are defined recursively as follows:
+    - 0, 1, $x_1$, $x_2$, ..., $x_n$ are Boolean expressions
+    - If $E_1$ and $E_2$ are Boolean expressions, then ($\overline{E_1}$), ($E_1 E_2$), and ($E_1 + E_2$) are Boolean expressions
+ 
+- Each Boolean expression represents a Boolean function. The values of this function are obtained by substituting 0 and 1 for the variables in the expression
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/4e6b8ddf-d338-45b0-810e-d763089eebd8)
+
+- There is a simple method for deriving a Boolean expression for a function that is defined by a table. This method is based on minterms.
+- A literal is a Boolean variable or its complement
+- A minterm of the Boolean variables $x_1$, $x_2$, ..., $x_n$ is a Boolean product $y_1 y_2 ... y_n$, where $y_i = x_i$ or $y_i = \overline{x_i}$
+- A minterm is a product of n literals, with one literal for each variable
