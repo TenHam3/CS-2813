@@ -716,7 +716,7 @@ Summary:
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/fd4f32a4-35d8-4159-8cc5-c543a8c1caea)
 
-- A relation R on a set A is called transitive if whenever (a,b) $\in$ R and (b, c) $\in$ R, then (a, c) $\in R for a, b, c $\in$ A
+- A relation R on a set A is called transitive if whenever (a,b) $\in$ R and (b, c) $\in$ R, then (a, c) $\in$ R for a, b, c $\in$ A
 
 ### Combining Relations
 
@@ -730,7 +730,7 @@ Summary:
 - Let R be a relation on the set A. The powers $R^n$, n = 1, 2, 3, ..., are defined inductively by
 - $R^1 = R$
 - $R^{n + 1} = R^n \circ R$
-- In other words: $R^n = R \circ R \circ ... \circ R (n times)
+- In other words: $R^n = R \circ R \circ ... \circ R$ (n times)
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/799bb53f-d83c-4445-bc0f-e407adb31e05)
 
@@ -770,7 +770,7 @@ Summary:
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/4f887c47-fd86-4ef3-832d-144d28cd1510)
 
 - We already know different ways of representing relations. We will now take a closer look at two ways of representation: Zero-one matrices and directed graphs
-- If R is a relation from A = {$a_1$, $a_2$, ..., $a_m$} to B = {$b_1$, $b_2$, ..., $b_n$}, then R can be represented by the zero-one matrix $M_R = [m_{ij}] with
+- If R is a relation from A = {$a_1$, $a_2$, ..., $a_m$} to B = {$b_1$, $b_2$, ..., $b_n$}, then R can be represented by the zero-one matrix $M_R = [m_{ij}]$ with
     - $m_{ij}$ = 1 if ($a_i$, $b_j$) $\in$ R and
     - $m_{ij}$ = 0 if ($a_i$, $b_j$) $\notin$ R
 - Note that for creating this matrix we first need to list the elements in A and B in a particular but arbitrary order
