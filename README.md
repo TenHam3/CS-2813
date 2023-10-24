@@ -679,6 +679,9 @@ Summary:
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/bf39194b-7154-4441-a513-b79381afe07a)
 
+- r-combinations with repetition stems from the stars and bars method where we have r identical objects to choose from and put into n bins, separated by n - 1 divisors/bars. This is why the numerator is (n + r - 1)! because you have n + r - 1 elements in the set to arrange in a certain way so that the r objects fit into n bins. Then you divide out the number of ways to permute the divisors and the number of ways to permute the r objects since these are identical and thus need to be collapsed into single permutations. 
+    - Can also be written as $\binom{n + r - 1}{r}$ because the formula would be $\frac{(n + r - 1)!}{((n + r - 1) - r)! * r!} = \frac{(n + r - 1)!}{(n - 1)!(r!)}$
+
 ### Discrete Probability
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/3f70d6da-dc3c-42ca-8f1d-f0a1629c3959)
