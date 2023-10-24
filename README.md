@@ -668,6 +668,8 @@ Inclusion-Exclusion
 - An r-combination of elements of a set is an unordered selection of r elements from the set
 - Thus, an r-combination is simply a subset of the set with r elements
 - The number of r-combinations of a set with n-distinct elements is denoted by C(n, r)
+- When computing combinations, you collapse all identical permutations by dividing by the factorial of the frequency of identical elements there are in the set
+    - This also means that if there are multiple elements with duplicates in the set, you have to divide by the factorials of the frequency of each duplicated element
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/91b101e6-6b8e-435f-b567-ece0a9f864b6)
 
@@ -676,7 +678,6 @@ Summary:
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/ad4a62c1-334b-4624-82a8-8735240de5fc)
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/bf39194b-7154-4441-a513-b79381afe07a)
-
 
 ### Discrete Probability
 
