@@ -596,10 +596,10 @@ Corresponding to nested loops in C or Java, there is also double (or triple etc.
 
 We can use the following method to define a function with the natural numbers as its domain:
 
-- Specify
-- asdf
+- Specify the value of the function at zero
+- Give a rule for finding its value at any integer from its values at smaller integers
 
-asdf
+Such a definition is called recursive or inductive definition
 
 ### Recursively Defined Sets
 
