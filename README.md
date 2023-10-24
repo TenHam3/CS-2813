@@ -850,3 +850,5 @@ We can derive additional identities with the help of the dual of a Boolean expre
 
 ![image](https://github.com/TenHam3/CS-2813/assets/109705811/18568955-df1c-4d09-b0e4-da19cd31b9ca)
 
+## Algorithm Complexity
+
