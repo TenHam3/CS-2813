@@ -822,7 +822,14 @@ We are going to focus on three operations
 - A literal is a Boolean variable or its complement
 - A minterm of the Boolean variables $x_1$, $x_2$, ..., $x_n$ is a Boolean product $y_1 y_2 ... y_n$, where $y_i = x_i$ or $y_i = \overline{x_i}$
 - A minterm is a product of n literals, with one literal for each variable
-- A minterm is essentially just values of $x_i$ that make the conjunction of $x_1$, $x_2$, ..., $x_n$ true or conjunction of $x_1$, $x_2$, ..., $x_n$ false
+- A minterm is essentially just values of $x_i$ that make the conjunction of $x_1$, $x_2$, ..., $x_n$ true
+    - These terms are multiplied because conjunction can only be true if all terms are true so it restricts all terms to have to evaluate true for the expression to be true
+- The sum of products describes the sum of all minterms that creates an expression to describe the function
+    - The minterms are all added together because the only way for the expression to evaluate false is if all minterms are false
+- A maxterm is a sum of n literals, with one literal for each variable where the disjunction of $x_1$, $x_2$, ..., $x_n$ is false
+    - These terms are added because disjunction can only be false if all terms are false so it restricts all terms to have to evaluate false for the expression to be false
+- The product of sums describes the product of all maxterms that creates an expression to describe the function
+    - The maxterms are all multiplied together because the only way for the expression to evaluate true is if all maxterms are true
 - The Boolean functions F and G of n variables are equal if and only if F($b_1$, $b_2$, ..., $b_n$) = G($b_1$, $b_2$, ..., $b_n$) whenever $b_1$, $b_2$, ..., $b_n$ belong to B
 - Two different Boolean expressions that represent the same Boolean function are called equivalent
 - The complement of the Boolean function F is the function -F, where -F($b_1$, $b_2$, ..., $b_n$) = $\overline{F(b_1, b_2, ..., b_n)}$
