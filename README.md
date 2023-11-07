@@ -859,3 +859,54 @@ We can derive additional identities with the help of the dual of a Boolean expre
 
 ## Algorithm Complexity
 
+In general, we are not so much interested in the time and space complexity for small inputs. For example, while the difference in time complexity between binary and linear search is meaningless for a sequence with n = 10, it is gigantic for n = $2^{30}$. 
+
+- For example, let us assume two algorithms A and B that solve the same class of problems
+- The time complexity of A is 5,000n while the one for B is $\lceil 1.1^n \rceil$ for an input with n elements
+- For n = 10, A requires 50,000 steps but B only 3, so B is superior to A
+- For n = 1000, however, A requires 5,000,000 steps while B takes $2.5 * 10^{41}$ steps
+- This means that algorithm B cannot be used for large inputs while algorithm A is still feasible.
+
+So what is important is the growth of the complexity functions. The growth of time and space complexity with increasing size n is a suitable measure for comparison of algorithms
+
+### Growth of Functions
+
+The growth of functions is usually described using big-O notation
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/aaafee85-349b-434f-8eaf-c2fc451e6126)
+
+- Intuitively, the definition that f(x) is O(g(x)) says that f(x) grows slower than some fixed multiple of g(x) as x grows without bound
+- Here, k refers to an arbitrary constant that signifies the turning point at which g(x) will be greater than f(x) whenever x > k. It can be seen graphically as the intersection between f(x) and Cg(x)
+- When we analyze the growth of complexity functions, f(x) and g(x) are always positive. Therefore we can simplify the big-O requirement to
+- f(x) $\leq$ Cg(x) whenever x > k
+- If we want to show that f(x) is O(g(x)), we only need to find one pair (C, k) (which is never unique)
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/ce73de10-f227-446b-b361-0acd5141956a)
+
+- Replacing all x terms of the polynomial with $x^2$ gives a polynomial that is greater than f(x) for k = 1
+- Since f(x) < $4x^2$, which is C * $x^2$, we can conclude that f(x) is $O(x^2)$
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/d5c50078-c18e-435e-b533-cd2e57adf05a)
+
+The idea behind big-O notation is to establish an upper boundary for the growth of a function f(x) for large x. This boundary is specified by a function g(x) that is usually much simpler than f(x). We accept the constant C in the requirement
+- f(x) $\leq$ C * g(x) whenever x > k
+because C does not grow with x. We are only interested in large x, so it is ok for f(x) > C * g(x) for x $\leq$ k
+
+Question: If f(x) is $O(x^2)$, is it also $O(x^3)$?
+- Yes. $x^3$ grows faster than $x^2$, so $x^3$ also grows faster than f(x)
+- Therefore we always have to find the smallest simple function g(x) for which f(x) is O(g(x))
+
+#### Popular Growth Functions Chart
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/5d7c6451-6122-44da-8356-e164ffe39fcf)
+
+A problem that can be solved with polynomial worst-case complexity is called tractable. Problems of higher complexity are called intractable. Problems that no algorithm can solve are called unsolvable. 
+
+#### Useful Rules For Big-O
+
+![image](https://github.com/TenHam3/CS-2813/assets/109705811/86bc8574-a3d8-482a-a003-377814c43e4b)
+
+- First rule states that a function with largest term of size n means that f(x) is $O(x^n)$
+- Second rule states that two functions with different time complexities will have a time complexity of $O(max(g_1 (x), g_2 (x))$. This is because if one was a larger order function, then you could simply add it to itself instead of the other smaller function since it would grow faster, and it would still not affect the time complexity since it would be two times the larger function
+    - Ex: $f_1 (x)$ is O(n) and $f_2 (x)$ is $O(\log{n})$ so the time complexity of $(f_1 + f_2) (x) = max(n, \log{n}) = n$
+    - Can be shown by observing that $n + \log{n} < n + n = 2n = C * n = O(n)$
